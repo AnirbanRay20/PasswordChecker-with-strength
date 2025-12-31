@@ -13,9 +13,22 @@ const rules = {
 };
 
 /* Toggle password visibility */
+
+const eyeOpen = document.getElementById("eyeOpen");
+const eyeClosed = document.getElementById("eyeClosed");
+
 toggleBtn.addEventListener("click", () => {
-    password.type = password.type === "password" ? "text" : "password";
+    if (password.type === "password") {
+        password.type = "text";
+        eyeOpen.style.display = "none";
+        eyeClosed.style.display = "inline";
+    } else {
+        password.type = "password";
+        eyeOpen.style.display = "inline";
+        eyeClosed.style.display = "none";
+    }
 });
+
 
 /* Live validation */
 password.addEventListener("input", () => {

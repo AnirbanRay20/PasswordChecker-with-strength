@@ -61,6 +61,15 @@ h1 {
     color: #38bdf8;
 }
 
+#toggleBtn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    color: #38bdf8;
+}
+
+
 /* STRENGTH BAR */
 .strength-bar {
     margin: 18px 0;
