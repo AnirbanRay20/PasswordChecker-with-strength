@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Password Analyzer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -14,7 +15,7 @@
 
         <div class="password-wrapper">
             <input type="password" id="password" placeholder="Enter password">
-            <button type="button" id="toggleBtn" aria-label="Toggle Password">
+            <button type="button" id="toggleBtn" aria-label="Toggle password visibility">
                 👁
             </button>
         </div>
@@ -32,8 +33,6 @@
             <li id="number">❌ One number</li>
             <li id="special">❌ One special character</li>
         </ul>
-
-        <div class="warning" id="warning"></div>
 
         <div class="result">
             <h3>Estimated Brute-Force Crack Time</h3>
