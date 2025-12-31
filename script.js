@@ -69,12 +69,12 @@ password.addEventListener("input", () => {
 
     if (pwd.length > 0 && charset > 0) {
         const entropy = Math.log2(Math.pow(charset, pwd.length));
-        entropyText.textContent = `Entropy: ${entropy.toFixed(2)} bits`;
+        entropyText.textContent = `Strength: ${entropy.toFixed(2)} bits`;
 
         const seconds = Math.pow(2, entropy) / 1e9;
         crackTime.textContent = formatTime(seconds);
     } else {
-        entropyText.textContent = "Entropy: —";
+        entropyText.textContent = "Strength: —";
         crackTime.textContent = "—";
     }
 });
